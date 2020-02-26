@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/6d4bd9095f.js"
       crossorigin="anonymous"
@@ -16,27 +20,27 @@
       <div class="form__wrapper">
         <form>
           <img src="./images/avatar.svg" alt="Avatar" class="form__img" />
-          <h2>Welcome!</h2>
-          <div class="input__container">
+          <h2 class="form__title">Welcome!</h2>
+          <div class="input__container one">
             <div class="input__icon">
               <i class="fas fa-user"></i>
             </div>
             <div class="input__wrapper">
-              <h5>Username</h5>
+              <h5 class="input__title">Username</h5>
               <input type="text" />
             </div>
           </div>
-          <div class="input__container">
+          <div class="input__container two">
             <div class="input__icon">
               <i class="fas fa-lock"></i>
             </div>
             <div class="input__wrapper">
-              <h5>Password</h5>
+              <h5 class="input__title">Password</h5>
               <input type="password" />
             </div>
           </div>
           <a href="#" class="form__forgot">Forgot password?</a>
-          <input type="submit" class="form__submir" value="Login" />
+          <input type="submit" class="form__submit" value="Login" />
         </form>
       </div>
     </div>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+}
+.phone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.phone img {
+  width: 500px;
+}
+.form__wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.form__img {
+  width: 100px;
+}
+.form form {
+  width: 360px;
+}
+.form__title {
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: #333;
+}
+.form__forgot {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.form__forgot:hover {
+  color: #8f94fb;
+}
+.form__submit {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 19px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb, #4e54c8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e54c8, #8f94fb, #4e54c8);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  background-size: 200%;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.form__submit:hover {
+  background-position: right;
+}
+.input__container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+.input__container:before,
+.input__container:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 50%;
+  height: 2px;
+  background: #8f94fb;
+}
+.input__container:after {
+  right: 50%;
+}
+.input__container:before {
+  left: 50%;
+}
+.input__container > div {
+  position: relative;
+}
+.input__container.focus i {
+  color: #8f94fb;
+}
+.input__container.focus .input__title {
+  top: -10px;
+  font-size: 12px;
+}
+.input__container.focus:before,
+.input__container.focus:after {
+  width: 50%;
+}
+.input__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.input__icon i {
+  color: #d9d9d9;
+}
+.input__title {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.input__wrapper input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+.one {
+  margin-top: 0;
+}
+.two {
+  margin-bottom: 4px;
+}
