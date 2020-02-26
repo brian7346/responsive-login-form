@@ -146,3 +146,28 @@ body {
 .two {
   margin-bottom: 4px;
 }
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-gap: 5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .form__title {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+  .phone img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .phone {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .form__wrapper {
+    justify-content: center;
+  }
+}
